@@ -58,18 +58,18 @@ class Datetimepicker extends InputWidget
         }
         DatetimepickerAsset::register($this->getView());
         $clientOptions = Json::encode($this->clientOptions);
-//        $this->view->registerJs("$('#{$this->options['id']}').datetimepicker({$clientOptions})");
-        $this->view->registerJs("$('#{$this->options['id']}').datetimepicker({
-            language:  'zh-CN',
-            weekStart: 1,
-            todayBtn:  1,
-            autoclose: 1,
-            startDate:new Date(),
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
-        })");
+        $this->view->registerJs("$('#{$this->options['id']}').datetimepicker({$clientOptions})");
+//        $this->view->registerJs("$('#{$this->options['id']}').datetimepicker({
+//            language:  'zh-CN',
+//            weekStart: 1,
+//            todayBtn:  1,
+//            autoclose: 1,
+//            startDate:new Date(),
+//            todayHighlight: 1,
+//            startView: 2,
+//            forceParse: 0,
+//            showMeridian: 1
+//        })");
 
     }
     /**
